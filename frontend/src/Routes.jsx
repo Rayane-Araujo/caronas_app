@@ -1,18 +1,16 @@
-import Login  from "./pages/Login";
-import Register from "./pages/Register";
-import { BrouserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { Route, Routes } from "react-router-dom";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
 
 const AppRoutes = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/login" element={<Login/>}></Route>
-                <Route path="/register" element={<Register/>}></Route>
-            </Routes>
-        </Router>
-
-    )
-}
+  return (
+   
+      <Routes>
+        <Route path="/login" element={<Login />}  /> 
+        <Route path="/register" element={<Register />} />
+      </Routes>
+   
+  );
+};
 
 export default AppRoutes;
