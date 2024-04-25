@@ -8,5 +8,5 @@ export const Header = ({ logo, title }) => {
       <img src={logo} alt="Logo do App Caronas" id="fotoo" />
       <h3>{title}</h3>
     </HeaderContainer>
-);
+  );
 };

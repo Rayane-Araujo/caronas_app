@@ -24,10 +24,6 @@ export const Register = () => {
           <Input type="telefone" id="telefone" />
         </InputContainer>
 
-        <InputContainer>
-          <label>Telefone</label>
-          <Input type="telefone" id="telefone" />
-        </InputContainer>
 
         <InputContainer>
           <label>Veículo</label>

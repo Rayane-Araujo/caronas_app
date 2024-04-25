@@ -22,7 +22,7 @@ export const Login = () => {
             <Input type="password" id="password" />
           </InputContainer>
 
-          <Button>Entrar</Button>
+          <Button className="login-button">Entrar</Button>
         </ContendInput>
 
         <div className="links">
