@@ -1,44 +1,38 @@
 import styled from "styled-components";
 
 
-export const LoginContainer = styled.main `
-
+export const LoginContainer = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding-top: 40px;
   padding-bottom: 135px;
-  min-height: 68vh;
-
 `
 
 
-export const ContendInput = styled.div `
-
+export const ContentInput = styled.div`
   display: flex;
-  margin-right: 20px;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
 `
 
-export const InputContainer = styled.div `
-
+export const InputContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
+  gap: 20px;
+`
 
-  > span {
-  font-size: 12px;
-  font-family: Open Sans;
-  color: #808080;
-  position: absolute;
-  top: -7px;
-  left: 10px;
-  background-color: white;
-}
+export const Links = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+  gap: 5px;
 
+  span {
+    font-family: "Itim", sans-serif;
+    color: #808080;
+  }
 `

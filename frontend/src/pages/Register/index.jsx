@@ -1,47 +1,55 @@
 import { Header } from "../../components/Header";
 import { Button } from "../../styles/Button";
 import { Input } from "../../styles/Input";
+import { ContentInput, InputContainer, Links } from "../../pages/Login/styled";
+import { Link } from "react-router-dom";
+
 import logo from "../../assets/images/LogoFoto.jpg";
-import { ContendInput, InputContainer } from "../../pages/Login/styled";
 
 export const Register = () => {
   return (
-    <div>
+    <>
       <Header logo={logo} title="Cadastro" />
-      <ContendInput>
+      <ContentInput>
         <InputContainer>
-          <label>Nome</label>
-          <Input type="name" id="name" />
-        </InputContainer>
+          <div>
+            <label>Nome</label>
+            <Input type="name" />
+          </div>
 
-        <InputContainer>
-          <label>Email</label>
-          <Input type="email" id="email" />
-        </InputContainer>
+          <div>
+            <label>Email</label>
+            <Input type="email" />
+          </div>
 
-        <InputContainer>
-          <label>Telefone</label>
-          <Input type="telefone" id="telefone" />
-        </InputContainer>
+          <div>
+            <label>Telefone</label>
+            <Input type="telefone" />
+          </div>
 
+          <div>
+            <label>Veículo</label>
+            <Input type="veiculo" />
+          </div>
 
-        <InputContainer>
-          <label>Veículo</label>
-          <Input type="veiculo" id="veiculo" />
-        </InputContainer>
+          <div>
+            <label>Senha</label>
+            <Input type="password" />
+          </div>
 
-        <InputContainer>
-          <label>Senha</label>
-          <Input type="password" id="password" />
-        </InputContainer>
-
-        <InputContainer>
-          <label>Confirmar senha</label>
-          <Input type="password" id="password" />
+          <div>
+            <label>Confirmar senha</label>
+            <Input type="password" />
+          </div>
         </InputContainer>
 
         <Button>Cadastrar</Button>
-      </ContendInput>
-    </div>
+
+        <Links>
+          <span>Já é cadastrado?</span>
+          <Link to="/login">Faça login</Link>
+        </Links>
+      </ContentInput>
+    </>
   );
 };
