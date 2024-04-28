@@ -17,7 +17,7 @@ export const ContentInput = styled.div`
   gap: 20px;
 `
 
-export const InputContainer = styled.div`
+export const Form = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
