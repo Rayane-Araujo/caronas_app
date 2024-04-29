@@ -8,20 +8,7 @@ import { useRegister } from "../../hooks/useRegister";
 import logo from "../../assets/images/LogoFoto.jpg";
 
 export const Register = () => {
-  const { formData, setFormData, isSubmitting, setIsSubmitting } = useRegister();
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-  };
+  const { formData, isSubmitting,  handleSubmit, handleChange } = useRegister();
 
   return (
     <>

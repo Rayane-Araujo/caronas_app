@@ -36,10 +36,23 @@ export const useRegister = () => {
     signUpUser();
   }, [isSubmitting, signUpUser]);
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+  };
+
   return {
     formData,
-    setFormData,
+    handleChange,
     isSubmitting,
-    setIsSubmitting,
+    handleSubmit,
   };
 };

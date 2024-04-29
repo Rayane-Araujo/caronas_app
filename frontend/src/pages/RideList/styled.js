@@ -38,6 +38,7 @@ export const RideListWrapper = styled.div`
 export const BtnWrapper = styled.div`
   display: flex;
   justify-content: center;
+  width: 50%;
   margin-top: 20px;
 `
 
