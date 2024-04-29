@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { RideList } from "./pages/RideList";
+import NotFound from "./pages/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const AppRoutes = () => {
         <Route path="/login" element={<Login />}  /> 
         <Route path="/register" element={<Register />} />
         <Route path="/ride-list" element={<RideList />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
    
   );
