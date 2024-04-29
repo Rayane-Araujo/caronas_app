@@ -188,3 +188,7 @@ main input.input_calendar {
   border-color: #d9d9d9;
 }
 /* component input_with_icons */
+
+.error {
+  color: red;
+}
