@@ -27,7 +27,7 @@ export const useLogin = () => {
       window.localStorage.setItem("userLoggedIn", response.data.userId);
       navigate("/ride-list");
     } catch (error) {
-      setError("Usuário ou senha inválidos");
+      setError("Email ou senha inválidos");
     } finally {
       setIsLoggingIn(false);
     }
