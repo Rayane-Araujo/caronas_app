@@ -1,36 +1,30 @@
 import styled from "styled-components";
 
 
-export const LoginContainer = styled.main`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 135px;
-`
-
-
-export const ContentInput = styled.div`
+export const ContentInput = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  margin: auto;
+
+  @media(min-width: 765px) {
+    width: 50%; 
+  }
 `
 
 export const Form = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 `
 
 export const Links = styled.div`
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
   margin-top: 3rem;
-  align-items: center;
-  gap: 5px;
-
+  
   span {
     font-family: "Itim", sans-serif;
     color: #808080;
