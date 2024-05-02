@@ -3,6 +3,7 @@ import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { RideList } from "./pages/RideList";
 import NotFound from "./pages/NotFound";
+import { RideCreate } from "./pages/RideCreate";
 
 const AppRoutes = () => {
   return (
@@ -10,10 +11,10 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Login />}  /> 
         <Route path="/register" element={<Register />} />
+        <Route path="/ride-create" element={<RideCreate />} />
         <Route path="/ride-list" element={<RideList />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-   
   );
 };
 
