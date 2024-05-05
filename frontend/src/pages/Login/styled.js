@@ -5,7 +5,7 @@ export const ContentInput = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin-top: 30px;
 
   @media(min-width: 765px) {
     width: 50%; 

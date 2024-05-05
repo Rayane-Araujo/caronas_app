@@ -2,14 +2,12 @@ import { Header } from "../../components/Header";
 import { Button } from "../../styles/Button";
 import { Input } from "../../styles/Input";
 import { ContentInput, Form } from "../../pages/Login/styled";
+import { CheckboxFild, CheckboxWrapper, Info, InputWrapper, TextArea } from "./styled";
+import { BasicDatePicker } from "../../components/Mui/DatePicker";
+import { BasicTimePicker } from "../../components/Mui/TimePicker";
 
 import logo from "../../assets/images/LogoFoto.jpg";
-import origin from "../../assets/images/Origem.png";
-import destiny from "../../assets/images/Destino.png";
-import watch from "../../assets/images/icon_clock.png";
-import calendar from "../../assets/images/Calendar.png";
-
-
+import Checkbox from "@mui/material/Checkbox";
 
 export const RideCreate = () => {
   return (
@@ -17,55 +15,61 @@ export const RideCreate = () => {
       <Header logo={logo} title="Criar carona" />
       <ContentInput>
         <Form>
-            <div className="search-ride-create">
-              <img src={origin}  alt="Ícone de origem da carona" />
+          <div>
+            <InputWrapper>
+              <i className="las la-map-pin"></i>
               <label>Origem</label>
-              <Input
-                type="text"
-                name="origin"
-                // value={formData.origin}
-              />
-            </div>
-
-          <div className="search-ride-create">
-            <img  src={destiny} alt="Ícone de destino da carona" />
-            <label>Destino</label>
-            <Input
-              type="text"
-              name="destiny"
-              // value={formData.destiny}
-            />
+            </InputWrapper>
+            <Input type="text" name="origin" />
           </div>
 
-          <div className="info">
-            <p>
-              Informações
-            </p>
+          <div>
+            <InputWrapper>
+              <i className="las la-map-marker"></i>
+              <label>Destino</label>
+            </InputWrapper>
+            <Input type="text" name="destiny" />
+          </div>
+
+          <Info>
+            <p>Informações</p>
             <div className="date-and-time">
-              <img src={watch} alt="Ícone de relogio" />
-              <span>19:00</span>
+              <BasicTimePicker />
 
-              <img src={calendar} alt="Ícone de calendario" />
-              <span>02/05/2024</span>
+              <BasicDatePicker />
             </div>
-          </div>
+          </Info>
 
-            <label>Observações</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+          <label>Observações</label>
+          <TextArea cols="30" rows="10" />
 
-               <div className="checkbox">
-                  <div className="checkbox-fild">
-                    <input type="checkbox" />
-                    <label>Procurando</label>
+          <CheckboxWrapper>
+            <CheckboxFild>
+              <Checkbox
+                defaultChecked
+                sx={{
+                  color: "#FFA500",
+                  "&.Mui-checked": {
+                    color: "#FFA500",
+                  },
+                }}
+              />
+              <label>Procurando</label>
 
-                    <input type="checkbox" />
-                    <label>Oferecendo</label>
-                  </div>
-               </div>
+              <Checkbox
+                defaultChecked
+                sx={{
+                  color: "#FFA500",
+                  "&.Mui-checked": {
+                    color: "#FFA500",
+                  },
+                }}
+              />
+              <label>Oferecendo</label>
+            </CheckboxFild>
+          </CheckboxWrapper>
 
-          <Button type="submit">
-            {"Criar"}
-          </Button>
+          <Button type="submit">{"Criar"}</Button>
         </Form>
       </ContentInput>
     </>
