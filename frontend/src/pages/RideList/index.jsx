@@ -5,24 +5,16 @@ import IconClock from "../../assets/images/icon_clock.png";
 import IconArrowRight from "../../assets/images/other_arrow-right.png";
 import PhotoUser from "../../assets/images/foto_condutor.png";
 
-import {
-  Profile,
-  Container,
-  ProfileWrapper,
-  RideListWrapper,
-  BtnWrapper,
-  List,
-  ProfileName,
-  InfoWrapper,
-  Date,
-  DateWrapper,
-  StyledLink,
-} from "./styled";
-
+import { Profile, Container, ProfileWrapper, RideListWrapper, BtnWrapper, List, ProfileName, InfoWrapper, Date, DateWrapper, StyledLink } from "./styled";
 import { Header } from "../../components/Header";
+import { useRideList } from "../../hooks/useRideList";
 
 
 export const RideList = () => {
+
+  const { data } = useRideList();
+
+  console.log(data)
   return (
     <>
       <Header logo={logo} title="Caronas disponíveis" />
