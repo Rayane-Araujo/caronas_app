@@ -16,9 +16,11 @@ import {
   InfoWrapper,
   Date,
   DateWrapper,
+  StyledLink,
 } from "./styled";
+
 import { Header } from "../../components/Header";
-import { Button } from "../../styles/Button";
+
 
 export const RideList = () => {
   return (
@@ -39,7 +41,7 @@ export const RideList = () => {
         </ProfileWrapper>
 
         <BtnWrapper>
-          <Button>Oferecer/Pedir</Button>
+          <StyledLink to="/ride-create">Oferecer/Pedir</StyledLink>
         </BtnWrapper>
 
         <RideListWrapper>

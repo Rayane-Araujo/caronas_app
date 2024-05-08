@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.main`
   display: flex;
@@ -6,6 +7,24 @@ export const Container = styled.main`
   align-items: center;
   padding-top: 20px;
   padding-bottom: 80px;
+`
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 31px;
+  height: 47px;
+  box-shadow: 0px 10px 9px rgba(50, 64, 1, 0.25);
+  color: #ffffff;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  background: #ffa500;
+  border-style: none;
+  font-size: 17px;
+  cursor: pointer;
 `
 
 export const ProfileWrapper = styled.div`
@@ -31,8 +50,9 @@ export const RideListWrapper = styled.div`
   gap: 18px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 30px;
-  padding: 0px 28px; 
+
 `
 
 export const BtnWrapper = styled.div`
@@ -56,14 +76,14 @@ export const List = styled.div`
   }
 `
 
-export const InfoWrapper = styled.div `
+export const InfoWrapper = styled.div`
   color: #6E6E6E;
   font-family: Inter;
   padding: 5px;
   width: 100%;
 `
 
-export const ProfileName = styled.div `
+export const ProfileName = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
@@ -72,13 +92,13 @@ export const ProfileName = styled.div `
   line-height: 21px;
 `
 
-export const DateWrapper = styled.div `
+export const DateWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
 `
 
-export const Date = styled.div `
+export const Date = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
