@@ -3,7 +3,7 @@ import IconUser from "../../assets/images/icon_user.png";
 import IconCar from "../../assets/images/icon_car.png";
 import IconClock from "../../assets/images/icon_clock.png";
 import IconArrowRight from "../../assets/images/other_arrow-right.png";
-import PhotoUser from "../../assets/images/foto_condut.png";
+import PhotoUser from "../../assets/images/foto_condutor.png";
 
 import {
   Profile,
